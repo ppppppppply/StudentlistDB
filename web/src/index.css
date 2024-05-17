@@ -1,0 +1,125 @@
+*{
+  margin:0;
+  padding:0;
+}
+
+.container{
+  max-width: 700px;
+  margin:auto;
+  padding:0 1rem;
+  padding-top: 30px;
+}
+
+h1{
+  margin-top: 1rem;
+  text-align:center;
+}
+
+.Top{
+  margin-top: 1rem;
+  display:flex;
+  gap:1rem;
+  padding: 50px;
+  justify-content: center;
+  justify-items: center;
+  justify-self: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+h1{
+  cursor: normal;
+  font-size: 40px;
+  margin-bottom: 100px;
+}
+
+input{
+  border:none;
+  outline:none;
+  width:400px;
+  padding: 0 0.5rem;
+  border-bottom: 1px solid black;
+  text-align: center;
+  
+}
+
+.add:hover{
+  scale: 0.9;
+}
+
+.icon-edit{
+  background-color: rgb(218, 175, 120);
+  color: #ffffff;
+  transform: translateY(-50%);
+  right:20px;
+  display:flex;
+  padding: 10px;
+  gap:0.5rem
+}
+
+.icon-delete{
+  background-color: rgb(179, 21, 21);
+  color: #ffffff;
+  transform: translateY(-50%);
+  right:20px;
+  display:flex;
+  padding: 10px;
+  gap:0.5rem
+}
+
+.icon{
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+  cursor:pointer;
+  padding-top: 30px;
+}
+
+.female {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  background-color: #ffffff;
+  color:#000000;
+  box-shadow: #bc69cc 0px 0px 10px 0px;
+  font-size: large;
+  font: bolder;
+  padding: 1.5rem 3rem;
+  border-radius: 5px;
+}
+
+.male {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  background-color: #ffffff;
+  color:#000000;
+  box-shadow: #69a0cc 0px 0px 10px 0px;
+  font-size: large;
+  font: bolder;
+  padding: 1.5rem 3rem;
+  border-radius: 5px;
+}
+
+.text{
+  padding-right: 100px;
+}
+
+.edit{
+  background-color: rgb(218, 175, 120);
+  color: #ffffff;
+  padding:0.5rem 1.5rem;
+  cursor: pointer;
+  transition: all ease 0.5s;
+}
+
+.add{
+  background-color: forestgreen;
+  color: #ffffff;
+  padding:0.5rem 1.5rem;
+  cursor: pointer;
+  transition: all ease 0.5s;
+}
