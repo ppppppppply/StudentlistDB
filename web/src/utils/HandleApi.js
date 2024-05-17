@@ -3,38 +3,38 @@ import axios from "axios";
 const baseUrl = "http://localhost:5000";
 
 // Function to GET all ToDo items
-const GET = (setToDo) => {
+const GET = (setStudent) => {
   axios
     .get(baseUrl)
     .then(({ data }) => {
       console.log("data ---> ", data);
-      setToDo(data);
+      setStudent(data);
     })
     .catch((err) => console.log(err));
 };
 
 // Function to POST a new ToDo item
-const POST = (text, gender, setText, setGender, setToDo) => {
+const POST = (text, gender, setText, setGender, setStudent) => {
   axios
     .post(`${baseUrl}/save`, { text,gender })
     .then(({ data }) => {
       console.log(data);
       setText("");
       setGender("");
-      GET(setToDo);
+      GET(setStudent);
     })
     .catch((err) => console.log(err));
 };
 
 // Function to PUT (update) a ToDo item
-const PUT = (toDoId, text, gender, setToDo, setText, setGender, setIsUpdating) => {
+const PUT = (StudentId, text, gender, setStudent, setText, setGender, setIsUpdating) => {
   axios
-    .post(`${baseUrl}/update`, { _id: toDoId, text,gender })
+    .post(`${baseUrl}/update`, { _id: StudentId, text,gender })
     .then(({ data }) => {
       setText("");
       setGender("");
       setIsUpdating(false);
-      GET(setToDo);
+      GET(setStudent);
     })
     .catch((err) => console.log(err));
 };
